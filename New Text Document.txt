@@ -1,0 +1,91 @@
+
+@keyframes typing {
+    0% {
+        content: 'I|';
+    }
+
+    8% {
+        content: 'In|';
+    }
+
+    16% {
+        content: 'Inf|';
+    }
+
+    24% {
+        content: 'Infl|';
+    }
+
+    32% {
+        content: 'Influ|';
+    }
+
+    40% {
+        content: 'Influe|';
+    }
+
+    48% {
+        content: 'influen|';
+    }
+
+    56% {
+        content: 'Influenc|';
+    }
+
+    64% {
+        content: 'Influence|';
+    }
+
+    72% {
+        content: 'Influencer|';
+    }
+
+    80%, 
+
+  
+    81% {
+        content: 'Influencer|';
+    }
+
+    82% {
+        content: 'Influence|';
+    }
+
+    84% {
+        content: 'Influenc|';
+    }
+
+    86% {
+        content: 'Influen|';
+    }
+
+    88% {
+        content: 'Influe';
+    }
+
+    90% {
+        content: 'Influ|';
+    }
+
+    92% {
+        content: 'Infl|';
+    }
+
+    94% {
+        content: 'Inf|';
+    }
+
+    96% {
+        content: 'In|';
+    }
+
+    98% {
+        content: 'I|';
+    }
+
+    100% {
+        content: '|';
+    }
+
+  }
+    
