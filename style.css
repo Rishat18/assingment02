@@ -1,0 +1,15 @@
+/*-------------------
+-----font family-----
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Poppins:wght@500&family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*-----------------------
+------- common style-----
+-------------------------- */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
