@@ -48,11 +48,11 @@ nav{
     font-size: 16px;
 }
 .navigation a:hover{
-    color: lightgreen;
+    color: #E02C6D;
     transition: .3s linear;
 }
 .navigation li:hover{
-    color: lightsalmon;
+    color: #E02C6D;
     transition:.3s linear;
 }
 /*--------------------------------
@@ -82,7 +82,7 @@ nav{
     position: absolute;
     top: 0;
     left: 0;
-    color: rgba(57, 196, 57, 0.838);
+    color: #E02C6D;
     animation: typing 3.5s linear infinite;
 }
 
@@ -287,4 +287,33 @@ nav{
             display: flex;
             justify-content: end;
             color: rgba(224, 44, 109, 0.87);
+}
+/*================================
+=========== form style===========
+=================================== */
+.parent{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 60px;
+}
+.offer-pic img{
+         width: 100%;
+         border-radius: 5px;
+}
+.contact-form form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+.main-focus{
+            color: #E02C6D;
+}
+.email{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 20px;
+    outline: 0;
+    border: 1px solid #E02C6D;
 }
