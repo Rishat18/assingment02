@@ -283,3 +283,8 @@ nav{
     color: #787885;
     font-size: 14px;
 }
+.last-icon{
+            display: flex;
+            justify-content: end;
+            color: rgba(224, 44, 109, 0.87);
+}
