@@ -14,9 +14,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 100px;
+    max-width: 1050px;
+
 }
 /* ------------------------------
 -------navigation style ---
@@ -59,8 +58,7 @@ nav{
 ---------- banner style -----------
 -----------------------------------*/
 .banner{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
    justify-content: center;
 }
 .banner-left{
@@ -230,17 +228,19 @@ nav{
  =========================================== */
  .popular-collection-style{
             display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: repeat(3, 1fr);
           justify-content: center;
+          grid-gap: 30px;
+          margin-bottom: 50px;
           
 }
+.product-info{
+    display: flex;
+}
 .product{
-         width: 260px;
-         height: 400px;
-         margin:0 auto ;
-         margin-right: 30px;
-         margin-bottom: 30px;
-         padding: 10px;
+         width: 300px;
+         height: 450px;
+         grid-gap: 30px;
          box-shadow: 10px 10px 20px lightgray;
          border-radius: 5px;
 }
@@ -250,7 +250,7 @@ nav{
 }
 .Popular-Collection-heading{
             text-align: center;
-            margin-bottom: 30px;
+
 }
 .Popular-Collection-heading h4{
         font-size: 28px;
@@ -264,20 +264,20 @@ nav{
             font-size: 24px;
             font-weight: 400;
 }
-.product-info{
+.product-rating{
         display: flex;
 }
 .product-info p{
             font-size: 14px;
 }
 .fa-star.full{
-    font-size: 10px;
+    font-size: 14px;
     color: #FB8200;
 }
 .fa-star-half-alt{
-    font-size: 10px;
+    font-size: 14px;
     color: #FB8200;
-    margin-right: 10px;
+    padding-right: 15px;
 }
 .product h4{
     color: #787885;
@@ -292,7 +292,7 @@ nav{
 =========== form style===========
 =================================== */
 .parent{
-            display: grid;
+            display: flex;
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 60px;
 }
@@ -320,20 +320,74 @@ nav{
 /*===============================
 =========footer style= ==========
 ================================*/
-.last-part{
-    width: 1440px;
-    height: 239px;
-    /* margin-right: 100px; */
+footer{
+    width: 100%;
     background: #0A0826;
     color: white; 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    padding: 30px 0;
 }
  .social-media{
     margin-top: 17px;
 }
 .social-media{
     margin-right:40px;
+}
+/* ============================
+==========media query ===
+===============================*/
+
+
+
+/*============================
+=====media query for mobile====
+===============================*/
+@media only screen and (max-width: 688px){
+    .container{
+              width: 100%;
+
+    }
+   .banner{
+       flex-direction: column-reverse;
+   }
+   .parent{
+       flex-direction: column;
+   }
+    .popular-collection-style{
+    grid-template-columns: 1fr;
+    justify-content: center;
+        justify-items: center;
+    }
+    .banner-left{
+        /* order: 2; */
+    }
+    .banner-right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    .banner-right img{
+        width: 70%;
+    }
+    .company-logo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parent{
+        
+    }
+   
+}
+    
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+width: 100%;
+    }
+    .popular-collection-style{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+            justify-items: center;
+        }
 }
