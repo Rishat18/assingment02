@@ -13,17 +13,17 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 100px;
+}
 /* ------------------------------
 -------navigation style ---
 --------------------------------*/
 nav{
     display: flex;
     justify-content: space-between;
-}
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 100px;
 }
 .heading{
     font-weight: 700;
@@ -37,8 +37,9 @@ nav{
 }
 .navigation li{
     display: inline-block;
-    margin-right: 34px;
-    padding: 8px 8px;
+    padding: 10px 10px;
+    margin: 5px 10px;
+    cursor: pointer;
 }
 .navigation a{
     text-decoration: none;
@@ -192,6 +193,7 @@ nav{
     border:0px;
     border-radius: 41px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .banner-right{
@@ -214,6 +216,7 @@ nav{
     justify-content: space-around;
     height: 60px;
     align-items: center;
+    margin-bottom: 40px;
 
     
 }
@@ -221,5 +224,62 @@ nav{
 .company-logo img{
       margin-left:30px; 
    
-      
+}
+ /*=========================================
+ ========== company product================
+ =========================================== */
+ .popular-collection-style{
+            display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          justify-content: center;
+          
+}
+.product{
+         width: 260px;
+         height: 400px;
+         margin:0 auto ;
+         margin-right: 30px;
+         margin-bottom: 30px;
+         padding: 10px;
+         box-shadow: 10px 10px 20px lightgray;
+         border-radius: 5px;
+}
+.product img{
+         width: 100%;
+         border-radius: 5px;
+}
+.Popular-Collection-heading{
+            text-align: center;
+            margin-bottom: 30px;
+}
+.Popular-Collection-heading h4{
+        font-size: 28px;
+        margin-top: 0px;
+         font-weight: 600;
+}
+.product-name{
+            font-size: 28px;
+}
+.product-price{
+            font-size: 24px;
+            font-weight: 400;
+}
+.product-info{
+        display: flex;
+}
+.product-info p{
+            font-size: 14px;
+}
+.fa-star.full{
+    font-size: 10px;
+    color: #FB8200;
+}
+.fa-star-half-alt{
+    font-size: 10px;
+    color: #FB8200;
+    margin-right: 10px;
+}
+.product h4{
+    color: #787885;
+    font-size: 14px;
 }
